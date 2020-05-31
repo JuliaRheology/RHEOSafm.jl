@@ -93,7 +93,7 @@ Generate approximate Hertz fit a, b, E, cp to use as initial conditions in prope
 
 function hertz_approx(f::Array{RheoFloat,1}, δ::Array{RheoFloat,1}, R::RheoFloat, ν::RheoFloat)
     
-    deriv = derivCD(derivCD(f, δ),δ);
+    deriv = RHEOS.derivCD(RHEOS.derivCD(f, δ),δ);
     value_max, index_max = findmax(deriv);
 
     #plot(δ, deriv)
@@ -111,7 +111,7 @@ function hertz_approx(f::Array{RheoFloat,1}, δ::Array{RheoFloat,1}, R::RheoFloa
 
 
 
-    avg_gradient = sum(derivBD(f[last_section], δ[last_section]))/length(last_section);
+    avg_gradient = sum(RHEOS.derivBD(f[last_section], δ[last_section]))/length(last_section);
 
     c = f[end] - avg_gradient*δ[end];
 
@@ -122,14 +122,14 @@ function hertz_approx(f::Array{RheoFloat,1}, δ::Array{RheoFloat,1}, R::RheoFloa
 
     prefactor = (4/3)*sqrt(R)/(1 - ν^2);
 
-    avg_gradient_transformed = sum(derivBD(f[last_section], δᵦ[last_section]))/length(last_section);
+    avg_gradient_transformed = sum(RHEOS.derivBD(f[last_section], δᵦ[last_section]))/length(last_section);
 
     approx_YM = avg_gradient_transformed/prefactor;
 
     # estimate offset and tilt
     first_section = 1:round(Int64, 0.5*length(f));
 
-    df_dh = derivBD(f, δ);
+    df_dh = RHEOS.derivBD(f, δ);
 
     tilt_approx = sum(df_dh[first_section])/length(first_section);
 
