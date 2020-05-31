@@ -1,6 +1,6 @@
 name = "RHEOSafm"
 uuid = "73cac1ca-88b8-4b1f-b66b-ed9b1bd992ce"
-authors = ["Alessandra <bonfantiale.ab@gmail.com>"]
+authors = ["Alessandra <bonfantiale.ab@gmail.com>", "J Louis Kaplan <jonathanlouiskaplan@outlook.com>", "Alexandre Kabla <ajk61@cam.ac.uk>"]
 version = "0.1.0"
 
 [deps]
