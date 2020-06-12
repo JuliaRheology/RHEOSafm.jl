@@ -225,9 +225,9 @@ function importJPK(filepath::String, interface::Interface; sections::Array{Strin
 		   end
 
    
-    # save extra information into named tuple
+    # save extra information into named tuple, TO BE PUT IN LOG
     extra_info = (x = x_coord, y = y_coord, sections = sectionarray, sections_names = list_segments)
 
 
-    return RheoTimeData(σ, ϵ, data.t, [log]), extra_info
+    return RheoTimeData(σ, ϵ, data.t, [log])
 end
