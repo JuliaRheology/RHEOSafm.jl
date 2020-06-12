@@ -1,0 +1,154 @@
+# TEXT EXPORT
+# data-description.comment: no comment entry
+# data-description.name: no name entry
+# data-description.probe: no probe entry
+# data-description.user-name: alessandra.bonfanti
+# data-description.instrument: JPK00806-CellHesion
+# data-description.source-software: 5.0.73
+# data-description.modification-software: 6.4.-1+
+# index: 0
+# xPosition: -4.960937494929414E-5
+# yPosition: -4.9609376711814966E-5
+# approachID: 2020.03.04-18.17.06-00077
+# force-settings.type: relative-force-settings
+# force-settings.extend-k-length: 250
+# force-settings.retract-k-length: 250
+# force-settings.extended-pause-k-length: 0
+# force-settings.retracted-pause-k-length: 0
+# force-settings.z-start-pause-option.type: constant-height
+# force-settings.z-end-pause-option.type: constant-height
+# force-settings.extend-scan-time: 0.025
+# force-settings.retract-scan-time: 0.025
+# force-settings.retracted-pause-time: 0.0
+# force-settings.extended-pause-time: 0.0
+# force-settings.data-description.comment: 
+# force-settings.data-description.name: 
+# force-settings.data-description.probe: 
+# force-settings.data-description.user-name: 
+# force-settings.data-description.instrument: 
+# force-settings.data-description.source-software: 
+# force-settings.data-description.modification-software: 
+# force-settings.start-with-retract: false
+# force-settings.control-settings-type: segment-control-settings
+# force-settings.closed-loop: true
+# force-settings.start-option.type: continue
+# force-settings.pixel-clock.active: false
+# force-settings.pixel-clock.name: 
+# force-settings.ttl-outputs.pins.list: 
+# force-settings.pause-before-first.type: constant-height-pause
+# force-settings.pause-before-first.identifier.type: standard
+# force-settings.pause-before-first.identifier.name: pause-spm
+# force-settings.pause-before-first.style: pause
+# force-settings.pause-before-first.duration: 0.0
+# force-settings.pause-before-first.num-points: 0
+# force-settings.pause-before-first.pause-option.type: constant-height
+# force-settings.pause-before-first.height-limit: NaN
+# force-settings.force-baseline-adjust-settings.enabled: true
+# force-settings.force-baseline-adjust-settings.interval: 1
+# force-settings.force-baseline-adjust-settings.beginOfLine: true
+# force-settings.force-baseline-adjust-settings.deadtimeBeforeSamples: 100
+# force-settings.force-baseline-adjust-settings.averageSamples: 100
+# force-settings.line-clock.active.extend: false
+# force-settings.line-clock.active.retract: false
+# force-settings.relative-setpoint: 0.8121808767303004
+# force-settings.relative-z-start: 2.0E-6
+# force-settings.relative-z-end: 0.0
+# feedbackMode: contact
+# pauseBeforeFirst: 0.0
+# traceScanTime: 0.025
+# retraceScanTime: 0.025
+# pauseAtStart: 0.0
+# pauseAtEnd: 0.0
+# pauseOnTipsaver: 0
+# scanner: false
+# date: Thu Mar 05 10:25:06 GMT 2020
+#
+# segmentIndex: 0
+# recorded-num-points: 250
+# segment: extend
+# columns: verticalTipPosition vDeflection height error smoothedMeasuredHeight measuredHeight hDeflection seriesTime time
+# fancyNames: "Vertical Tip Position" "Vertical Deflection" "Height" "Error Signal" "Height (measured & smoothed)" "Height (measured)" "Lateral Deflection" "Series Time" "Segment Time"
+# heightMultiplier: 0.672126
+# heightOffset: 0.0
+# sensitivity: 4.8179458423277655E-8
+# springConstant: 46.0
+# calibrationSlots: nominal force nominal volts nominal nominal volts elapsed elapsed
+# units: m N m V m m V s s
+#
+5.8964E-5 1.27E-9 4.751364E-5 0.02419684 5.8964768E-5 5.8966434E-5 1.3799816 5.0E-5 5.0E-5
+5.8956E-5 5.34E-10 4.7507852E-5 0.024290044 5.8956914E-5 5.8959326E-5 1.3805089 1.5E-4 1.5E-4
+5.8949E-5 1.45E-9 4.750203E-5 0.02429488 5.8949052E-5 5.895137E-5 1.3805372 2.5E-4 2.5E-4
+
+# index: 0
+# xPosition: -4.960937494929414E-5
+# yPosition: -4.9609376711814966E-5
+# approachID: 2020.03.04-18.17.06-00077
+# force-settings.type: relative-force-settings
+# force-settings.extend-k-length: 250
+# force-settings.retract-k-length: 250
+# force-settings.extended-pause-k-length: 0
+# force-settings.retracted-pause-k-length: 0
+# force-settings.z-start-pause-option.type: constant-height
+# force-settings.z-end-pause-option.type: constant-height
+# force-settings.extend-scan-time: 0.025
+# force-settings.retract-scan-time: 0.025
+# force-settings.retracted-pause-time: 0.0
+# force-settings.extended-pause-time: 0.0
+# force-settings.data-description.comment: 
+# force-settings.data-description.name: 
+# force-settings.data-description.probe: 
+# force-settings.data-description.user-name: 
+# force-settings.data-description.instrument: 
+# force-settings.data-description.source-software: 
+# force-settings.data-description.modification-software: 
+# force-settings.start-with-retract: false
+# force-settings.control-settings-type: segment-control-settings
+# force-settings.closed-loop: true
+# force-settings.start-option.type: continue
+# force-settings.pixel-clock.active: false
+# force-settings.pixel-clock.name: 
+# force-settings.ttl-outputs.pins.list: 
+# force-settings.pause-before-first.type: constant-height-pause
+# force-settings.pause-before-first.identifier.type: standard
+# force-settings.pause-before-first.identifier.name: pause-spm
+# force-settings.pause-before-first.style: pause
+# force-settings.pause-before-first.duration: 0.0
+# force-settings.pause-before-first.num-points: 0
+# force-settings.pause-before-first.pause-option.type: constant-height
+# force-settings.pause-before-first.height-limit: NaN
+# force-settings.force-baseline-adjust-settings.enabled: true
+# force-settings.force-baseline-adjust-settings.interval: 1
+# force-settings.force-baseline-adjust-settings.beginOfLine: true
+# force-settings.force-baseline-adjust-settings.deadtimeBeforeSamples: 100
+# force-settings.force-baseline-adjust-settings.averageSamples: 100
+# force-settings.line-clock.active.extend: false
+# force-settings.line-clock.active.retract: false
+# force-settings.relative-setpoint: 0.8121808767303004
+# force-settings.relative-z-start: 2.0E-6
+# force-settings.relative-z-end: 0.0
+# feedbackMode: contact
+# pauseBeforeFirst: 0.0
+# traceScanTime: 0.025
+# retraceScanTime: 0.025
+# pauseAtStart: 0.0
+# pauseAtEnd: 0.0
+# pauseOnTipsaver: 0
+# scanner: false
+# date: Thu Mar 05 10:25:06 GMT 2020
+#
+# segmentIndex: 1
+# recorded-num-points: 250
+# segment: retract
+# columns: verticalTipPosition vDeflection height error smoothedMeasuredHeight measuredHeight hDeflection seriesTime time
+# fancyNames: "Vertical Tip Position" "Vertical Deflection" "Height" "Error Signal" "Height (measured & smoothed)" "Height (measured)" "Lateral Deflection" "Series Time" "Segment Time"
+# heightMultiplier: 0.672126
+# heightOffset: 0.0
+# sensitivity: 4.8179458423277655E-8
+# springConstant: 46.0
+# calibrationSlots: nominal force nominal volts nominal nominal volts elapsed elapsed
+# units: m N m V m m V s s
+#
+5.700397E-5 1.2158288E-6 4.604976E-5 0.021705939 5.6977537E-5 5.695051E-5 1.395608 0.02505 5.0E-5
+5.6990855E-5 1.2286599E-6 4.6044766E-5 0.020017743 5.6964145E-5 5.694236E-5 1.3950615 0.02515 1.5E-4
+5.6978166E-5 1.242204E-6 4.60402E-5 0.01820254 5.695116E-5 5.6933E-5 1.3945569 0.02525 2.5E-4
+5.6965928E-5 1.2580831E-6 4.6036082E-5 0.016193645 5.6938577E-5 5.6921785E-5 1.394446 0.02535 3.5E-4
