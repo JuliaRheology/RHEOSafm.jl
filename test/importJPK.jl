@@ -1,10 +1,10 @@
 println("===============================================")
-println("Testing processing.jl")
+println("Testing AFM_importJPK.jl")
 println("===============================================")
 
 
 function _importJPK_data()
-    
+
     fildir = joinpath(@__DIR__, "testdata", "AFM_sampledata.txt")
 
     data = importJPK(fildir, AFM(150e-9); sections = ["extend"])
