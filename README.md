@@ -3,6 +3,7 @@
 <img src="docs/logo.png" height="130"></img>
 </a>
 </div>
+<br/>
 
 |**Test Status**|**Documentation**|**Test Coverage**|
 |:-------------:|:---------------:|:---------------:|
