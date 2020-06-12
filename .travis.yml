@@ -14,4 +14,4 @@ notifications:
 git:
   depth: false
 
-##codecov: true
+codecov: true
