@@ -11,8 +11,8 @@
 
 
 
-[travis-img]: 
-[travis-url]: 
+[travis-img]: https://travis-ci.org/JuliaRheology/RHEOSafm.jl.svg?branch=master
+[travis-url]: https://travis-ci.org/github/JuliaRheology/RHEOSafm.jl
 
 [docs-sta-img]: https://img.shields.io/badge/docs-stable-blue.svg
 [docs-sta-url]: https://JuliaRheology.github.io/RHEOSafm.jl/stable
