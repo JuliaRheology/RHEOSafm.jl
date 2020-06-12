@@ -6,7 +6,7 @@
 
 |**Test Status**|**Documentation**|**Test Coverage**|
 |:-------------:|:---------------:|:---------------:|
-| [![Build Status][travis-img]][travis-url] | [![Stable][docs-sta-img]][docs-sta-url] [![Dev][docs-dev-img]][docs-dev-url] | [![codecov][codecov-img]][codecov-url] [![coveralls][coveralls-img]][coveralls-url] | 
+| [![Build Status][travis-img]][travis-url] | [![Stable][docs-sta-img]][docs-sta-url] [![Dev][docs-dev-img]][docs-dev-url] | [![codecov][codecov-img]][codecov-url]| 
 
 
 
@@ -20,9 +20,5 @@
 [docs-dev-img]: https://img.shields.io/badge/docs-dev-blue.svg
 [docs-dev-url]: https://JuliaRheology.github.io/RHEOSafm.jl/dev
 
-[codecov-img]: 
-[codecov-url]: 
-
-[coveralls-img]: 
-[coveralls-url]: 
-
+[codecov-img]: https://codecov.io/gh/JuliaRheology/RHEOSafm.jl/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/JuliaRheology/RHEOSafm.jl
