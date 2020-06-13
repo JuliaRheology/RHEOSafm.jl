@@ -80,6 +80,8 @@ function contact_hertz(f::Array{RheoFloat}, δ::Array{RheoFloat}, param::NamedTu
 
     # return index of contact point
     δ₀_index = argmin(abs.(δ .- minx[1]));
+
+    return (δ₀_index)
     
 end
 
@@ -93,16 +95,14 @@ Generate approximate Hertz fit a, b, E, cp to use as initial conditions in prope
 
 function hertz_approx(f::Array{RheoFloat,1}, δ::Array{RheoFloat,1}, R::RheoFloat, ν::RheoFloat)
     
+    # approximate contact point, assume linear near end of approach section
+    # and trace line down to axis
     deriv = RHEOS.derivCD(RHEOS.derivCD(f, δ),δ);
     value_max, index_max = findmax(deriv);
 
-    #plot(δ, deriv)
+    # #coeff = (1-index_max/length(f))
+    # last_section = round(Int64, 0.9*length(f)):length(f)
 
-    #coeff = (1-index_max/length(f))
-
-    # approximate contact point, assume linear near end of approach section
-    # and trace line down to axis
-    #last_section = round(Int64, coeff*length(f)):length(f)
     if index_max > 5    
         last_section = (index_max-5):length(f);
     else
