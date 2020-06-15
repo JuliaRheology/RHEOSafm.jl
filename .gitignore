@@ -1,0 +1,8 @@
+docs/build/
+docs/site/
+docs/staging-docs/
+docs/staging-nb/
+examples/.ipynb_checkpoints
+*.jl.cov
+*.jl.*.cov
+*.jl.mem

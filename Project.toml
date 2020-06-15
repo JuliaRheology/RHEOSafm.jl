@@ -5,6 +5,8 @@ version = "0.1.0"
 
 [deps]
 DelimitedFiles = "8bb1440f-4735-579b-a4ab-409b98df4dab"
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+Literate = "98b081ad-f1c9-55d3-8b20-4c87d4299306"
 NLopt = "76087f3c-5699-56af-9a33-bf431cd00edd"
 PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
 RHEOS = "728860ae-c896-11e8-0b91-0f38ecad5046"
