@@ -55,7 +55,7 @@ function maindocbuilder()
     makedocs(modules=[RHEOSafm],
             doctest= false, clean=true,
             format = Documenter.HTML(),
-            sitename="RHEOSafm",
+            sitename="",
             source = "staging-docs",
             authors="Alessandra Bonfanti, Louis Kaplan, Alexandre Kabla",
             pages = ["Home" => "index.md",
