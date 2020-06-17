@@ -1,4 +1,4 @@
-# ![](logo.png =250x250) 
+<img src="logo.png" width="120">
 
 |**Test Status**|**Documentation**|**Test Coverage**|
 |:-------------:|:---------------:|:---------------:|
