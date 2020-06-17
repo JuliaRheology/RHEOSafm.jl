@@ -17,6 +17,9 @@ function docprepare()
     # copy readme to staging-docs
     cp("README.md", "docs/staging-docs/index.md")
 
+    # copy logo to staging-docs
+    cp("logo.png", "docs/staging-docs/logo.png")
+
     # copy assets to staging directory
     cp("docs/src/assets", "docs/staging-docs/assets")
 
