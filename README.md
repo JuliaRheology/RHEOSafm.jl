@@ -1,4 +1,4 @@
-# ![](logo.png) <!-- .element width="60%" -->
+# ![logo|512x397,20%](logo.png) 
 
 |**Test Status**|**Documentation**|**Test Coverage**|
 |:-------------:|:---------------:|:---------------:|
