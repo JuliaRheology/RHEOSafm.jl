@@ -1,9 +1,4 @@
-<a name="logo"/>
-<div align="center">
-<img src="logo.png" height="130"></img>
-</a>
-</div>
-<br/>
+# ![](logo.png)
 
 |**Test Status**|**Documentation**|**Test Coverage**|
 |:-------------:|:---------------:|:---------------:|
