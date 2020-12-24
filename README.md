@@ -1,4 +1,4 @@
-<img src="logo.png" width="120">
+<img src="logo.png" width="180">
 
 |**Test Status**|**Documentation**|**Test Coverage**|
 |:-------------:|:---------------:|:---------------:|
