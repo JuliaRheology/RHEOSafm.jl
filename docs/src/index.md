@@ -15,7 +15,7 @@ The sections in this documentation each aim to provide tutorials for the element
 1. Install Julia (latest version recommended)
 2. From interactive command-line Julia REPL, enter pkg mode by pressing ```]```
 3. (Optional) Enable desired Project.toml environment
-4. Run the command ```add RHEOSafm```
+4. Run the command ```add https://github.com/JuliaRheology/RHEOSafm.jl```
 
 ## Embedded Dependencies
 
