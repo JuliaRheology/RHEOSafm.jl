@@ -15,7 +15,7 @@ function docprepare()
     mkdir("docs/staging-docs")
 
     # copy readme to staging-docs
-    cp("README.md", "docs/staging-docs/index.md")
+    # cp("README.md", "docs/staging-docs/index.md")
 
     # copy logo to staging-docs
     cp("logo.png", "docs/staging-docs/logo.png")
