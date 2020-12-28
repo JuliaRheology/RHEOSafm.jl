@@ -62,8 +62,10 @@ function maindocbuilder()
             source = "staging-docs",
             authors="Alessandra Bonfanti, Louis Kaplan, Alexandre Kabla",
             pages = ["Home" => "index.md",
-                     "Example 01" => "example_01.md"])
-
+                     "Examples" => ["Relaxation experiment" => "example_01.md",
+                                    "Indentation experiment" => "example_02.md"]
+                    ]
+            )
     deploydocs(repo = "github.com/JuliaRheology/RHEOSafm.jl.git",
                deps = nothing,
                make = nothing,
