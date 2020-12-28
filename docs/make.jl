@@ -63,7 +63,8 @@ function maindocbuilder()
             authors="Alessandra Bonfanti, Louis Kaplan, Alexandre Kabla",
             pages = ["Home" => "index.md",
                      "Examples" => ["Relaxation experiment" => "example_01.md",
-                                    "Indentation experiment" => "example_02.md"]
+                                    "Indentation experiment" => "example_02.md"],
+                     "API" => "API.md"
                     ]
             )
     deploydocs(repo = "github.com/JuliaRheology/RHEOSafm.jl.git",
