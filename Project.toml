@@ -11,3 +11,7 @@ NLopt = "76087f3c-5699-56af-9a33-bf431cd00edd"
 PyPlot = "d330b81b-6aea-500a-939a-2ce795aea3ee"
 RHEOS = "728860ae-c896-11e8-0b91-0f38ecad5046"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compat]
+julia = "1.5"
+RHEOS = "0.9.3"
