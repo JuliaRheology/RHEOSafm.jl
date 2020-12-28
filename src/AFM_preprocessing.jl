@@ -105,13 +105,13 @@ function hertz_approx(f::Array{RheoFloat,1}, δ::Array{RheoFloat,1}, R::RheoFloa
     value_max, index_max = findmax(deriv);
 
     # #coeff = (1-index_max/length(f))
-    # last_section = round(Int64, 0.9*length(f)):length(f)
+    last_section = round(Int64, 0.99*length(f)):length(f)
 
-    if index_max > 5    
-        last_section = (index_max-5):length(f);
-    else
-        last_section = (index_max):length(f);
-    end
+    #if index_max > 5    
+    #    last_section = (index_max-5):length(f);
+    #else
+    #    last_section = (index_max):length(f);
+    #end
 
 
 
