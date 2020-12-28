@@ -166,9 +166,9 @@ function IndexToExtract(list_segments::Array{String}, sections::Array{String})
 end
 
 """
-    JPKconverRHEOS(filedir::String)
+importJPK
 convenience function for loading in JPK AFM data into RHEOS with relevant metadata
-and split in to sections.
+and split in to sections. Possible sections values are: extend, hold, retract.
 """
 function importJPK(filepath::String, interface::Interface; sections::Array{String} = nothing, comment = "Imported from JPK txt file", savelog = true)
 

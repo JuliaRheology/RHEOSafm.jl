@@ -1,3 +1,7 @@
+"""
+    contact_point
+Find approximate contact point. Current available methods (cp) are `threshold' (i.e. the contact point is identified by fixing a force threshold) or `hertz' (i.e. the contact point is identified by fitting a hertz model to the curve).
+"""
 function contact_point(self::RheoTimeData, interface::Interface, cp::String, param::NamedTuple; savelog = true,  sec = :)
 
     contactmodels = Dict("threshold" => contact_threshold,
