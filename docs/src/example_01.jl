@@ -25,12 +25,12 @@ plot(data.t, data.σ, legend = false, xlabel = "Time", ylabel = "Stress")
 # 2) apply Hertz spherical contact model
 # In this example the "threshold" method is used. An application of the Hertz method is availabel in example 02. 
 data_contact = contact_point(data, interface, "threshold", (threshold = 1e-8,));
-d_downsample = resample(data_contact, scale=1//2)
+d_downsample = resample(data_contact, scale=0.5)
 
 plot(data_contact.t, data_contact.σ, legend = false, xlabel = "Time", ylabel = "Stress")
 
-SLS_model = modelstepfit(d_downsample, FractSLS_Zener, strain_imposed)
 
+SLS_model = modelstepfit(d_downsample, FractSLS_Zener, strain_imposed)
 SLS_predict = extract(data_contact, strain_only)
 # and calculate the stress based on the model
 SLS_predict = modelpredict(SLS_predict, SLS_model)
