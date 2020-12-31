@@ -17,7 +17,8 @@ data = importJPK(input_file, interface, sections = ["extend", "pause"]);
 
 #md # !!! note "Beware!"
 #md #     Currently RHEOSafm makes use of the Hertz contact model to convert force-displacement to stress-strain. Additional tip geometries will be added in next updates. 
-plot(data.t, data.σ, legend = false, xlabel = "Time", ylabel = "Stress")
+plot(data.t, data.σ, legend = false, xlabel = "Time", ylabel = "Stress", guidefont= 18)
+
 # To detect the point at which approximately contact occurs in RHEOSafm it is possible to: 
 # 1) apply a force threshold
 # 2) apply Hertz spherical contact model
@@ -36,6 +37,6 @@ SLS_predict = extract(data_contact, strain_only);
 # and calculate the stress based on the fitted model
 SLS_predict = modelpredict(SLS_predict, SLS_model);
 # Now we can plot data and model together for comparison
-plot(data_contact.t, data_contact.σ, legend = true, xlabel = "Time", ylabel = "Stress", label = "Experimental data")
-plot!(SLS_predict.t, SLS_predict.σ, label = "Predicted")
+plot(data_contact.t, data_contact.σ, legend = true, xlabel = "Time", ylabel = "Stress", label = "Experimental data", guidefont = 18)
+plot!(SLS_predict.t, SLS_predict.σ, label = "Predicted", guidefont = 18)
 
