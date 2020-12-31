@@ -7,6 +7,7 @@ using RHEOSafm
 using RHEOS
 
 using Plots
+gr()
 
 # Next, the output file provided by the JPK software is imported. The file contains the time-force-displacement values and they are automatically converted into time-stress-strain. 
 # The function [`importJPK`](@ref) requires the file path, the radious of the indenter, and the segments of the curve to upload (i.g. extend, pause, retract).
