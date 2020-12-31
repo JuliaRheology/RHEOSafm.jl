@@ -4,7 +4,7 @@
 # data-description.probe: no probe entry
 # data-description.user-name: alessandra.bonfanti
 # data-description.instrument: JPK00806-CellHesion
-# data-description.source-software: 5.0.73
+# data-description.source-software: 6.0.73
 # data-description.modification-software: 6.4.-1+
 # index: 1
 # xPosition: -4.882812716376659E-5
