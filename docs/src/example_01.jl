@@ -17,25 +17,25 @@ data = importJPK(input_file, interface, sections = ["extend", "pause"]);
 
 #md # !!! note "Beware!"
 #md #     Currently RHEOSafm makes use of the Hertz contact model to convert force-displacement to stress-strain. Additional tip geometries will be added in next updates. 
-
 plot(data.t, data.σ, legend = false, xlabel = "Time", ylabel = "Stress")
-
 # To detect the point at which approximately contact occurs in RHEOSafm it is possible to: 
 # 1) apply a force threshold
 # 2) apply Hertz spherical contact model
 # In this example the "threshold" method is used. An application of the Hertz method is availabel in example 02. 
 data_contact = contact_point(data, interface, "threshold", (threshold = 1e-8,));
-d_downsample = resample(data_contact, -10)
 
-plot(data_contact.t, data_contact.σ, legend = false, xlabel = "Time", ylabel = "Stress")
+#md # !!! compat "Note"
+#md #     From this point, RHEOS functionalities are used to fit the relaxation data. For more information refer to [RHEOS documentation](https://juliarheology.github.io/RHEOS.jl/stable/).
 
-
-SLS_model = modelstepfit(d_downsample, FractSLS_Zener, strain_imposed)
-SLS_predict = extract(data_contact, strain_only)
-# and calculate the stress based on the model
-SLS_predict = modelpredict(SLS_predict, SLS_model)
+# To speed up the fitting procedure, the data points are downsampled.
+d_downsample = resample(data_contact, -20);
+# The relaxation curve is then fitted using a Fractional Standard Linear Solid model
+SLS_model = modelstepfit(d_downsample, FractSLS_Zener, strain_imposed);
+# Now we can extract the strain pattern 
+SLS_predict = extract(data_contact, strain_only);
+# and calculate the stress based on the fitted model
+SLS_predict = modelpredict(SLS_predict, SLS_model);
 # Now we can plot data and model together for comparison
-
-plot(data_contact.t, data_contact.σ, legend = false, xlabel = "Time", ylabel = "Stress")
-plot!(SLS_predict.t, SLS_predict.σ, legend = false, xlabel = "Time", ylabel = "Stress")
+plot(data_contact.t, data_contact.σ, legend = true, xlabel = "Time", ylabel = "Stress", label = "Experimental data")
+plot!(SLS_predict.t, SLS_predict.σ, label = "Predicted")
 
