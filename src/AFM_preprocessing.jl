@@ -63,8 +63,11 @@ function contact_hertz(f::Array{RheoFloat}, δ::Array{RheoFloat}, param::NamedTu
     # poisson ratio - assume incompressible
     ν = 0.5;
 
+    # section of the curve to be used to identify the first approximation
+    s = param.s
+
     # get approximate δ0 and YM values
-    (init_δ₀, init_YM, tilt_approx, offset_approx) =  hertz_approx(f, δ, R, ν);
+    (init_δ₀, init_YM, tilt_approx, offset_approx) =  hertz_approx(f, δ, R, ν, s);
 
     # least squares fit
     opt = Opt(:LN_SBPLX, 4); # 4 parameters to fit
@@ -97,7 +100,7 @@ end
 Generate approximate Hertz fit a, b, E, cp to use as initial conditions in proper fit.
 """
 
-function hertz_approx(f::Array{RheoFloat,1}, δ::Array{RheoFloat,1}, R::RheoFloat, ν::RheoFloat)
+function hertz_approx(f::Array{RheoFloat,1}, δ::Array{RheoFloat,1}, R::RheoFloat, ν::RheoFloat, s::RheoFloat)
     
     # approximate contact point, assume linear near end of approach section
     # and trace line down to axis
@@ -105,15 +108,7 @@ function hertz_approx(f::Array{RheoFloat,1}, δ::Array{RheoFloat,1}, R::RheoFloa
     value_max, index_max = findmax(deriv);
 
     # #coeff = (1-index_max/length(f))
-    last_section = round(Int64, 0.99*length(f)):length(f)
-
-    #if index_max > 5    
-    #    last_section = (index_max-5):length(f);
-    #else
-    #    last_section = (index_max):length(f);
-    #end
-
-
+    last_section = round(Int64, s*length(f)):length(f)
 
     avg_gradient = sum(RHEOS.derivBD(f[last_section], δ[last_section]))/length(last_section);
 
