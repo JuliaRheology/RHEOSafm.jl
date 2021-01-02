@@ -5,9 +5,8 @@
 using RHEOSafm
 using RHEOS
 
-
 using Plots
-gr()
+gr();
 
 # next import the .txt file obtained from the JPK software
 input_file = joinpath(@__DIR__, "assets", "AFM_contact_test.txt")
