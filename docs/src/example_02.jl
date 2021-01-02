@@ -2,7 +2,6 @@
 
 # This script provides an example of fitting of a force-indentation curve. 
 # First import the packages.
-using Revise
 using RHEOSafm
 using RHEOS
 
