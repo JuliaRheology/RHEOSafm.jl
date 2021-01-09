@@ -13,5 +13,5 @@ RHEOS = "728860ae-c896-11e8-0b91-0f38ecad5046"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [compat]
-julia = "1.5"
 RHEOS = "0.9.3"
+julia = "1.5"
