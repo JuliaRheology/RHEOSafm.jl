@@ -5,5 +5,5 @@ Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
 RHEOS = "728860ae-c896-11e8-0b91-0f38ecad5046"
 
 [compat]
-julia = "1.5"
 RHEOS = "0.9.3"
+julia = "1.5"
