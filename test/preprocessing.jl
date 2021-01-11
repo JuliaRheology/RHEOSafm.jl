@@ -26,10 +26,10 @@ function _contact_hertz_f()
     # index = RHEOSafm.contact_hertz(F,d, (R = R,))
     input_file = joinpath(@__DIR__, "testdata", "AFM_contact_test.txt")
     data = importJPK(input_file, AFM(150e-9), sections = ["extend"]);
-    data_contact = contact_point(data, AFM(150e-9), "hertz", (R = 150e-9,));
+    data_contact = contact_point(data, AFM(150e-9), "hertz", (R = 150e-9, s = 0.5));
     length_contact = length(data_contact.t);
 
-    length_contact == 128
+    length_contact == 127
 end
 
 @test _contact_hertz_f()
