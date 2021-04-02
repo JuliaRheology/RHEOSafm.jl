@@ -37,6 +37,6 @@ SLS_predict = extract(data_contact, strain_only);
 # and calculate the stress based on the fitted model
 SLS_predict = modelpredict(SLS_predict, SLS_model);
 # Now we can plot data and model together for comparison
-plot(data_contact.ϵ, data_contact.σ, legend = true, xlabel = "Stress", ylabel = "Stress", label = "Experimental data", guidefont= 10, size = (500,500), lw=3, margin=16mm)
+plot(data_contact.ϵ, data_contact.σ, legend = true, xlabel = "Strain", ylabel = "Stress", label = "Experimental data", guidefont= 10, size = (500,500), lw=3, margin=16mm)
 plot!(SLS_predict.ϵ, SLS_predict.σ, label = "Fitted",guidefont= 10, size = (400,400), lw=2)
 
